@@ -1,10 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Warnes&display=swap');
+
+
 body {
-  background-color: violet;
+  background-color: rgb(0, 0, 0);
   margin: auto;
   max-width: 1200px;
-  color: purple;
+  color: rgb(253, 0, 211);
 }
 
-p {
-  color: black;
-}
+h1 {
+  color : rgb(253, 0, 211);
+  font-size: 80px;
+  text-align: center;
+  font-family: 'Warnes', cursive;
+  text-shadow: 0 0 5px rgb(255, 255, 255), 0 0 10px #fff, 0 0 15px #e202ff, 0 0 20px #8a00e6, 0 0 25px #fa02bc, 0 0 30px #fc05c6, 0 0 35px #fd03c7;
+  }
