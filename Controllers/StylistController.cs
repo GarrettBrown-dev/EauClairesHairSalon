@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace HairSalon.Controllers
 {
-  public class StylistsController : Controller
+  public class StylistsController : Controllers
   {
     private readonly HairSalonContext _db;
 
@@ -29,7 +29,7 @@ namespace HairSalon.Controllers
     [HttpPost]
     public ActionResult Create(Stylist stylist)
     {
-      _db.Stylists.Add(stylist);
+      _db.Stylist.Add(stylist);
       _db.SaveChanges();
       return RedirectToAction("Index");
     }
@@ -37,7 +37,7 @@ namespace HairSalon.Controllers
     public ActionResult Details(int id)
     {
       Stylist thisStylist = _db.Stylists
-      .Include(stylist => stylist.Clients)
+      .Include(stylist => stylist.Client)
       .FirstOrDefault(stylist => stylist.StylistId == id);
       return View(thisStylist);
     }
@@ -66,7 +66,7 @@ namespace HairSalon.Controllers
     public ActionResult DeleteConfirmed(int id)
     {
       var thisStylist = _db.Stylists.FirstOrDefault(stylist => stylist.StylistId == id);
-      _db.Stylists.Remove(thisStylist);
+      _db.Stylist.Remove(thisStylist);
       _db.SaveChanges();
       return RedirectToAction("Index");
     }
