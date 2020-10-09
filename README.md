@@ -21,6 +21,8 @@ Pierre's ... "Friend" (I think they're dating, but he doesn't want to tell me be
   * Ensure Garrett_Brown.sql was downloaded
   * Create an appsettings.json file
   * add localhost port, database name (garrett_brown) and your mysql password. 
+  * Run dotnet restore and dotnet build.
+  * Dotnet run and navigate to your localhost, and enjoy!
 
 * Download option
   * Download files from GitHub repository by click Code and Download Zip
