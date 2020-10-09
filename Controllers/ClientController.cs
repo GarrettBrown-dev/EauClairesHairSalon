@@ -38,7 +38,7 @@ namespace HairSalon.Controllers
 
     public ActionResult Details(int id)
     {
-      Restaurant thisClient = _db.Clients.FirstOrDefault(clients => clients.ClientId == id);
+      Client thisClient = _db.Clients.FirstOrDefault(clients => clients.ClientId == id);
       return View(thisClient);
     }
 
@@ -66,7 +66,7 @@ namespace HairSalon.Controllers
     [HttpPost, ActionName("Delete")]
     public ActionResult DeleteConfirmed(int id)
     {
-      var thisClient = _db.Clients.FirstOrDefault(clients => clients.ClienttId == id);
+      var thisClient = _db.Clients.FirstOrDefault(clients => clients.ClientId == id);
       _db.Clients.Remove(thisClient);
       _db.SaveChanges();
       return RedirectToAction("Index");
