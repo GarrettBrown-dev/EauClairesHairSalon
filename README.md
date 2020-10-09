@@ -1,4 +1,4 @@
-# _Pierre's Vendors!_
+# _Eau Claire's Hair Salon!_
 
 #### _C# Program for Epicodus Ind-Review-3, October 9th, 2020_
 
