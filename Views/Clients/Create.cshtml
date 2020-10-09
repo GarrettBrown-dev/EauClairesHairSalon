@@ -3,8 +3,9 @@
 }
 
 @model HairSalon.Models.Client
+<h1>Add a client!</h1>
 
-<h4>Add a new Client</h4>
+<h2>(You must add a stylist first, or your client will not be saved!</h2>
 @using (Html.BeginForm())
 {
     @Html.LabelFor(model => model.Name)
